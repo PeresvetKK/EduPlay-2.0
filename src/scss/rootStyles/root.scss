@@ -1,0 +1,130 @@
+@font-face {
+	font-family: 'Luntik'; 
+	src: url('../components/fonts/luntik_bold.otf'); 
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+    --main-color: #383838;
+    --darkGray:   #AEAEAE;
+    --gray:       #CACACA;
+    --whiteGray:  #EEEEEE;
+    --white:  #ffffff;
+    --orange:     #FF8832;
+    --purple:     #6A32E7;
+    --gradient:     linear-gradient(92.1deg, #E97F32 0%, #6A32E7 100%);
+    --main-font:    'Montserrat', sans-serif;
+}
+
+$mainColor: var(--main-color);
+$darkGray: var(--darkGray);
+$gray: var(--gray);
+$whiteGray: var(--whiteGray);
+$white: var(--white);
+$orange: var(--orange);
+$purple: var(--purple);
+$gradient: var(--gradient);
+$mainFont: var(--main-font);
+
+// ебучие неодаптированные шрифты, которые приходится писать в таком большом
+// количестве
+h1,h2 {font-family: 'Luntik', sans-serif;}
+h1    {font-size: 5.4rem;}
+h2    {font-size: 2.6rem;}
+.r{
+    &-15, &-16, &-20, &-26 {font-weight: 400;}
+    &-15{
+        font-size: 1.5rem;
+    }
+    &-16{
+        font-size: 1.6rem;
+    }
+    &-20{
+        font-size: 2rem;
+    }
+    &-26{
+        font-size: 2.6rem;
+    }
+}
+.m{
+    &-14, &-20 {font-weight: 500;}
+    &-14{
+        font-size: 1.4rem;
+    }
+    &-20{
+        font-size: 2rem;
+    }
+}
+.s{
+    &-20, &-24 {font-weight: 600;}
+    &-20{
+        font-size: 2rem;
+    }
+    &-24{
+        font-size: 2.4rem;
+    }
+}
+.b{
+    &-18, &-20, &-22, &-32 {font-weight: 700;}
+    &-18{
+        font-size: 1.8rem;
+    }
+    &-20{
+        font-size: 2rem;
+    }
+    &-22{
+        font-size: 2.2rem;
+    }
+    &-32{
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1{font-size: 3rem;}
+    .r{
+        &-15{
+            font-size: 1.2rem;
+        }
+        &-16{
+            font-size: 1.4rem;
+        }
+        // был 20 стал 16. Был 26 стал 15
+        &-20{
+            font-size: 1.6rem;
+        }
+        &-26{
+            font-size: 1.5rem;
+        }
+    }
+    .m{
+        &-14{
+            font-size: 1.4rem;
+        }
+        &-20{
+            font-size: 2rem;
+        }
+    }
+    .s{
+        &-20{
+            font-size: 2rem;
+        }
+        &-24{
+            font-size: 2.4rem;
+        }
+    }
+    .b{
+        &-18{
+            font-size: 1.8rem;
+        }
+        &-20{
+            font-size: 2rem;
+        }
+        &-22{
+            font-size: 2.2rem;
+        }
+        &-32{
+            font-size: 3.2rem;
+        }
+    }
+}

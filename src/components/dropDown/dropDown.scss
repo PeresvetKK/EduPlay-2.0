@@ -1,0 +1,57 @@
+@import './jquery.nice-select.scss';
+
+.drop-down{
+    background: #FFFFFF;
+    border: 1px solid #6A32E7;
+    border-radius: 30px;
+    width: 23.4rem;
+    height: 5.4rem;
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    &:hover, &:focus{
+        border: 1px solid #6A32E7;
+    }
+    .current{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .list{
+        width: 23.4rem;
+        background: #FFFFFF;
+        border: 1px solid #6A32E7;
+        border-top: 0;
+        border-radius: 0 0 3rem 3rem;
+        top: 4.3rem;
+        left: -1px;
+        li{
+            padding: 0 4rem;
+            font-weight: 500 !important;
+            font-size: 20px;
+            line-height: 24px;
+            color: #383838;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #6A32E7;
+            background-color: #fff !important;
+            &:first-child{
+                display: none;
+            }
+        }
+    }
+}
+.open{
+    border-radius: 3rem 3rem 0 0;
+    border: 1px solid #6A32E7;
+}
+.nice-select:after{
+    right: 3rem;
+    border-bottom: 2px solid #383838;
+    border-right: 2px solid #383838;
+}
+@media (max-width: 769px){
+    .drop-down{
+        width: 18.2rem;
+    }
+}
