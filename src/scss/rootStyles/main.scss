@@ -215,3 +215,109 @@ button {
         width: 100%;
     }
 }
+.input-icons{
+    background: #FFFFFF;
+    border: 1px solid #AEAEAE;
+    border-radius: 30px;
+    width: 26.6rem;
+    position: relative;
+    height: 5.4rem;
+    display: flex;
+    padding: 1.5rem 3rem;
+    gap: 1rem;
+    svg{
+        cursor: pointer;
+    }
+    input{
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: #AEAEAE;
+        width: calc(100% - 3rem);
+    }
+    @media (max-width: 500px){
+        width: 4.6rem;
+        height: 4.6rem;
+        background: $purple;
+        border-radius: .8rem;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $purple;
+        input{display: none;}
+        svg{
+            path{
+                fill: #fff;
+            }
+        }
+    }
+}
+.breads{
+    margin: 5rem 0 4rem;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+    svg{
+        cursor: pointer;
+    }
+    &__item{
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: #AEAEAE;
+    }
+}
+.pagination{
+    &__wrapper{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    &__item{
+        width: 3.6rem;
+        height: 3.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $purple;
+        border-radius: 100%;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &__breads{
+        background: transparent;
+        color: $purple;
+        align-items: flex-end;
+    }
+}
+.footer{
+    background: $purple;
+    padding: 4rem 0;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__coll{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__item{
+        color: $white;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    @media (max-width: 769px){
+        &__wrapper{
+            flex-direction: column;
+            gap: 4rem;
+        }
+    }
+}

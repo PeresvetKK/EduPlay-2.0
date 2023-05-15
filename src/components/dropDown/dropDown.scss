@@ -1,5 +1,9 @@
 @import './jquery.nice-select.scss';
 
+.drop-down-container{
+    width: 23.4rem;
+    height: 5.4rem;
+}
 .drop-down{
     background: #FFFFFF;
     border: 1px solid #6A32E7;
@@ -51,7 +55,10 @@
     border-right: 2px solid #383838;
 }
 @media (max-width: 769px){
-    .drop-down{
+    .drop-down, .drop-down-container, .drop-down .list{
         width: 18.2rem;
+    }
+    .drop-down .list li{
+        padding: 0 2rem;
     }
 }

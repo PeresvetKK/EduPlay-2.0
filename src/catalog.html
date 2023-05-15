@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+	<title>Catalog</title>
+</head>
+
+<body id="root">
+	<main class="main">
+		<section class="breads">
+			<div class="wrapper breads__wrapper">
+				<svg class="breads__item breads-back" width="16" height="6" viewBox="0 0 16 6" fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path d="M0 3L5 5.88675V0.113249L0 3ZM15.5 2.5H4.5V3.5H15.5V2.5Z" fill="#AEAEAE" />
+				</svg>
+				<a href="#" class="breads__item">Главная /</a>
+				<a href="#" class="breads__item">Список игр</a>
+			</div>
+		</section>
+		<section class="catalog">
+			<div class="wrapper catalog__wrapper">
+				<h1 class="catalog__title">Список Игр</h1>
+				<div class="catalog-header">
+					<div class="drop-down-container">
+						<select class="drop-down">
+							<option data-display="Предмет"></option>
+							<option value="1">Математика</option>
+							<option value="2">Грамматика</option>
+							<option value="3">Логика</option>
+							<option value="4">География</option>
+							<option value="5">Русский язык</option>
+							<option value="6" disabled>Химия</option>
+						</select>
+					</div>
+					<div class="input-search input-icons">
+						<input type="text" placeholder="Поиск">
+						<svg class="input-icons__icon" width="21" height="21" viewBox="0 0 21 21" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M8.4908 0.0139631C10.2012 0.167516 11.7365 0.807733 13.0001 1.89426C15.0649 3.66971 16.0657 6.35435 15.6659 9.04495C15.5536 9.8004 15.3132 10.5777 14.9667 11.3051L14.8386 11.574L17.5607 14.2863C19.0578 15.7781 20.3355 17.0587 20.3999 17.1321C20.8263 17.6176 21.0242 18.1708 20.9976 18.8029C20.9838 19.1314 20.922 19.3894 20.7904 19.6672C20.476 20.3311 19.911 20.7906 19.1955 20.9643C19.0767 20.9931 18.9629 21.0009 18.6742 20.9999C18.3417 20.9988 18.2848 20.9932 18.1042 20.9445C17.8765 20.8831 17.5821 20.75 17.3891 20.6214C17.3 20.562 16.3503 19.6269 14.4121 17.6902L11.5661 14.8463L11.2621 14.9912C10.3892 15.4073 9.48245 15.6532 8.50715 15.7381C8.16221 15.7682 7.22966 15.7507 6.91552 15.7084C5.95938 15.5794 5.16578 15.3395 4.35037 14.9329C3.57965 14.5486 2.92837 14.0773 2.29783 13.4477C1.6771 12.8279 1.22775 12.2058 0.830111 11.4157C0.390751 10.5426 0.147675 9.72273 0.026907 8.70627C-0.00875854 8.40627 -0.00902367 7.34156 0.0264568 7.05395C0.123442 6.268 0.296558 5.57579 0.562902 4.90902C1.00206 3.80964 1.80588 2.69403 2.72919 1.90249C3.92129 0.880538 5.30994 0.262776 6.88474 0.0538446C7.24666 0.00583495 8.15033 -0.0165997 8.4908 0.0139631ZM7.20282 1.35037C6.54384 1.41215 5.79418 1.6139 5.16426 1.89898C4.70157 2.10837 4.34694 2.31996 3.91942 2.64175C2.48685 3.71998 1.57046 5.31947 1.35036 7.12579C1.30339 7.51139 1.30409 8.27556 1.35178 8.64225C1.45808 9.45981 1.65404 10.1116 2.00446 10.8129C2.9453 12.696 4.70832 13.9995 6.78909 14.3504C9.61021 14.8261 12.4217 13.4057 13.7185 10.8495C14.2046 9.8913 14.4237 8.96707 14.4237 7.87498C14.4237 7.3415 14.393 7.02715 14.2936 6.54412C13.7942 4.11644 11.9498 2.17025 9.54415 1.5326C9.12275 1.4209 8.68528 1.35456 8.13654 1.31913C7.97432 1.30866 7.46642 1.32566 7.20282 1.35037ZM8.34175 3.29955C9.03065 3.37297 9.79796 3.64318 10.3631 4.0113C11.1735 4.5392 11.8388 5.36001 12.1656 6.23516C12.3589 6.75266 12.4665 7.30843 12.4665 7.78904C12.4665 7.99467 12.4335 8.06942 12.304 8.15672C12.0988 8.295 11.8099 8.12548 11.8098 7.86681C11.8097 7.16167 11.5622 6.33091 11.1792 5.75057C10.47 4.67566 9.38721 4.04037 8.11743 3.9542C7.75634 3.92969 7.7459 3.92752 7.66539 3.85976C7.48846 3.71085 7.50028 3.47242 7.69164 3.33043C7.74058 3.29412 7.78177 3.28697 7.95841 3.28422C8.07331 3.28242 8.24582 3.28931 8.34175 3.29955ZM13.955 12.8754C13.7254 13.1602 13.0973 13.7832 12.8089 14.0123L12.5664 14.2048L15.292 16.9283C17.8118 19.4461 18.0277 19.6566 18.1518 19.7165C18.3407 19.8077 18.4828 19.8409 18.6853 19.8412C19.0159 19.8417 19.2652 19.7383 19.4957 19.5051C19.7279 19.2701 19.8337 19.0178 19.8337 18.6985C19.8337 18.4992 19.7938 18.3402 19.6962 18.15C19.6267 18.0145 19.4332 17.8157 16.9111 15.2892L14.2006 12.5739L14.1595 12.6233C14.137 12.6504 14.0449 12.7639 13.955 12.8754Z"
+								fill="#AEAEAE" />
+						</svg>
+					</div>
+				</div>
+				<div class="catalog-lists">
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card1.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card2.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Diamond Math</a>
+								<p class="card__text">Сражайся с монстрами, решая математические примеры!</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card3.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card4.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card5.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card6.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card7.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card8.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card9.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card10.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card11.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-lists__card card">
+						<div class="card__image">
+							<img src="./img/card12.png" alt="игра 1">
+						</div>
+						<div class="card__container">
+							<div class="card__textbox">
+								<a href="" class="card__title">Съедобное-несъедобное</a>
+								<p class="card__text">С неба падают различные предметы, съедобные надо есть, несъедобное пропускать.</p>
+							</div>
+							<p class="card__predmet">Предмет: <span>Логика</span></p>
+							<div class="card__functional">
+								<button class="card__button btn btn-orange btn-m" type="button">Играть</button>
+								<span class="card__pagi">6+</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="pagination">
+			<div class="wrapper pagination__wrapper">
+				<a href="#" class="pagination__item">1</a>
+				<a href="#" class="pagination__item">2</a>
+				<a href="#" class="pagination__item">3</a>
+				<a href="#" class="pagination__item pagination__breads">...</a>
+				<a href="#" class="pagination__item">12</a>
+			</div>
+		</section>
+		<img id="catalog-bg-1" src="./img/catalog1.png" alt="catalog1">
+		<img id="catalog-bg-2" src="./img/catalog2.png" alt="catalog2">
+		<img id="catalog-bg-3" src="./img/catalog3.png" alt="catalog3">
+		<img id="catalog-bg-4" src="./img/catalog4.png" alt="catalog4">
+		<img id="catalog-bg-5" src="./img/catalog5.png" alt="catalog5">
+	</main>
+</body>
+
+</html>

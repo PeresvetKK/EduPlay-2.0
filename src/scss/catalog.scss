@@ -1,0 +1,131 @@
+@import './rootStyles/main';
+
+main{
+    margin-bottom: 10rem;
+    position: relative;
+}
+.catalog-header{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.catalog-lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+    gap: 2rem;
+   &__card{
+        width: calc(25% - 2rem);
+   }
+}
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    &__image{
+        height: 18rem;
+        img{
+            height: 100%;
+        }
+    }
+    &__container{
+        padding: 2rem 1.5rem;
+        height: 24.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__textbox{
+       height: 12.7rem;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: $purple;
+        padding-bottom: 1rem;
+    }
+    &__text{
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        padding-bottom: 1.5rem;
+    }
+    &__predmet{
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        padding-bottom: 1.5rem;
+        span{
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+    }
+    &__functional{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__button{
+        height: 3.8rem;
+    }
+    &__pagi{
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 3.4rem;
+        color: $purple;
+    }
+
+}
+#catalog-bg-1{
+    position: absolute;
+    top: 0;
+    max-width: 26rem;
+    right: 0;
+    z-index: -1;
+}
+#catalog-bg-2{
+    max-width: 20rem;
+    position: absolute;
+    top: 31vh;
+    z-index: -1;
+}
+#catalog-bg-3{
+    position: absolute;
+    top: 62vh;
+    max-width: 12rem;
+    right: 0;
+    z-index: -1;
+}
+#catalog-bg-4{
+    position: absolute;
+    bottom: 46vh;
+    max-width: 13rem;
+    z-index: -1;
+}
+#catalog-bg-5{
+    max-width: 15rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    bottom: -3vh;
+}
+
+@media (max-width: 1199.98px) {
+    .catalog-lists__card {
+        width: calc(33.33333333% - 2rem);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .catalog-lists__card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .catalog-lists__card {
+        width: 100%;
+    }
+}
