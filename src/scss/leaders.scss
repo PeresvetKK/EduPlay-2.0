@@ -1,0 +1,308 @@
+@import './rootStyles/main';
+
+main{
+    margin-bottom: 10rem;
+    position: relative;
+}
+.catalog-header{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+.catalog-lists {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+    gap: 2rem;
+   &__card{
+        width: calc(25% - 2rem);
+   }
+}
+.bg-absolute-1{
+    position: absolute;
+    top: 20vh;
+    max-width: 14rem;
+    right: 0;
+    z-index: -1;
+}
+.bg-absolute-2{
+    max-width: 6rem;
+    position: absolute;
+    top: 6vh;
+    left: 2vw;
+    z-index: -1;
+}
+.bg-absolute-3{
+    position: absolute;
+    top: 62vh;
+    max-width: 12rem;
+    right: 0;
+    z-index: -1;
+}
+.bg-absolute-4{
+    position: absolute;
+    bottom: 30vh;
+    max-width: 13rem;
+    z-index: -1;
+}
+.bg-absolute-5{
+    max-width: 15rem;
+    position: absolute;
+    right: 23vw;
+    z-index: -1;
+    top: 0;
+}
+.bg-absolute-6{
+    max-width: 10rem;
+    position: absolute;
+    right: 10vw;
+    z-index: -1;
+    top: 0;
+}
+.leaders-game{
+    display: flex;
+    gap: 2.5rem;
+    margin-top: 4rem;
+    &__img{
+        max-width: 28.5rem;
+        border-radius: 3rem;
+    }
+}
+.leaders-game-textbox{
+    &__title{
+        font-weight: 700;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+    }   
+    &__subtitle{
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        color: #383838;
+        margin-bottom: 1rem;
+    }
+    &__text{
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}
+.accordions{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 4rem;
+}
+.accordion{
+    &-profile{
+        width: 6.2rem;
+        height: 6.2rem;
+    }
+    &__username{
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        color: #FFFFFF;
+    }
+    &-stars{
+        display: flex;
+        gap: 1rem;
+    }
+    &-xp{
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        color: #FFFFFF;
+        padding: 0.8rem 2rem;
+        background: #5723CA;
+        border-radius: 100rem;
+    }
+    &-arrow{
+        padding: 3.12rem 4rem;
+        background: #5723CA;
+        border-radius: 1000px;
+    }
+    &-left, &-center{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+.accordion{
+    position: relative;
+    list-style: none;
+}
+.accordion-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    .accordion-medal{
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        width: 4.3rem;
+        height: 6.8rem;
+        position: absolute;
+        p{
+            font-weight: 700;
+            font-size: 2.2rem;
+            line-height: 2.7rem;
+            text-align: center;
+            color: #383838;
+        }
+    }
+}
+.characteristics__title {
+    margin-left: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #6A32E7;
+    border-radius: 100rem;
+    height: 8rem;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    padding: 9px 0 9px 20px;
+}
+.accordion-arrow img{
+    transition: transform .5s;
+}
+.characteristics__title.active{
+    .accordion-arrow img{
+        transform: rotate(180deg);
+        transition: transform .5s;
+    }
+}
+.characteristics__description {
+    margin-left: 7rem;
+    margin-top: -8px;
+    height: 0;
+    overflow: hidden;
+    transition: height .4s ease-in-out;
+}
+ 
+.characteristics__list-description{
+    width: 95%;
+    margin: 0 auto;
+    background: #5723CA;
+    border-radius: 12px;   
+}
+
+.characteristics__description.active {
+    height: auto;
+}
+.characteristics__item-description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 6rem 1.8rem; 
+}
+.description-item{
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    color: #FFFFFF;
+    span{
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.4rem;
+    }
+}
+.description-btn{
+    img{display: none;}
+}
+@media (max-width: 769px){
+    .catalog-header{
+        flex-direction: column;
+        width: 100%;
+    }
+    .drop-down-container, .drop-down{
+        width: 100% !important;
+    }
+    .leaders-game__img, .leaders-game-textbox{
+        width: 49%;
+    }
+    .leaders-game-textbox{
+        &__title{
+            font-size: 1.8rem;
+            line-height: 2.2rem;
+        }
+        &__subtitle{
+            font-size: 1.6rem;
+            line-height: 2rem;
+        }
+        &__text{
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+    }
+    .accordion-stars{display: none;}
+    .accordion-profile{
+        width: 4rem;
+        height: 4rem;
+    }
+    .accordion__username{
+        font-size: 1.6rem;
+        line-height: 2rem;
+    }
+    .accordion-xp{
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+    .accordion-arrow{
+        background: transparent;
+        width: 1.3rem;
+        height: 0.7rem;
+        padding: 0;
+    }
+    .accordion-container .accordion-medal{
+        width: 3.1rem;
+        height: 4.8rem;
+    }
+    .characteristics__title{
+        margin-left: 4rem;
+        padding: 9px 7px;
+    }
+    .characteristics__description{
+        margin-left: 4rem;
+        width: 90%;
+    }
+    .characteristics__item-description{
+        padding: 1.5rem 1rem 1.8rem;
+        flex-wrap: wrap;
+    }
+    .description-item{
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        span{
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+        }
+    }
+    .description-btn{
+        width: 5.7rem;
+        background: #FF8832;
+        border-radius: 9px 0px;
+        margin-bottom: -18px;
+        margin-right: -10px;
+        p{
+            display: none;
+        }
+        img{
+            display: block;
+            width: 17px;
+            height: 16px;
+        }
+    }
+    .bg-absolute-2, .bg-absolute-1, .bg-absolute-3{
+        display: none;
+    }
+    .bg-absolute-5 {
+        max-width: 7rem;
+        right: 14vw;
+    }
+    .bg-absolute-6 {
+        max-width: 6rem;
+        right: 1vw;
+    }
+}
