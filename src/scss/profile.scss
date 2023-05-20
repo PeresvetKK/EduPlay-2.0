@@ -1,0 +1,228 @@
+@import './rootStyles/main';
+
+main{
+    margin-bottom: 10rem;
+    position: relative;
+}
+.profile{
+    &-main{
+        display: flex;
+        gap: 2rem;
+    }
+    &-images, &-information{
+        width: 48%;
+        position: relative;
+    }
+}
+.profile-images__elips{
+    position: absolute;
+    bottom: 23%;
+    left: -4%;
+    width: 100%;
+}
+.open-companyons{
+    margin-top: 4rem;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+.profile-slider{
+    position: relative;
+    &__item{
+        max-width: 59rem;
+        max-height: 62.5rem;
+    }
+}
+.slider-thumb{
+    margin: 0 auto;
+    margin-top: 2rem;
+    width: 80%;
+    &__item{
+        background: $gradient;
+        border-radius: 22px;
+        margin-right: 1.5rem;
+        cursor: pointer;
+    }
+    .prev-arrow, .next-arrow{
+        padding: 1.3rem 1.5rem 1.3rem 1.2rem;
+        width: 4.2rem;
+        height: 4.2rem;
+        background: #6A32E7;
+        border-radius: 100%;
+        cursor: pointer;
+        position: absolute;   
+        z-index: 2;
+        top: calc(50% - 2.1rem);
+    }
+    .next-arrow{
+        right: -6rem;
+    }
+    .prev-arrow{
+        left: -6rem;
+    }
+}
+.profile-header__text{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 2.5rem;
+}
+.profile-card{
+    position: relative;
+    padding: 2rem 3rem;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 3rem;
+    overflow: hidden;
+    &__header{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+        img{
+            width: 6.2rem;
+            height: 6.2rem;
+        }
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+    }
+    &__main{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    &__item{
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        span{
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.4rem;
+        }
+    }
+    &__bg{
+        position: absolute;
+        width: 161.2px;
+        height: 161.98px;
+        right: -2px;
+        top: -24px;    
+    }
+}
+.profile-function{
+    display: flex;
+    gap: 2.2rem;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.progress{
+    margin-top: 3rem;
+    &__title{
+        font-weight: 700;
+        font-size: 2.6rem;
+        line-height: 2.8rem;
+        font-family: 'Luntik', sans-serif;
+        margin-bottom: 1.5rem;
+    }
+    &-cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    &-card{
+        position: relative;
+        width: 48%;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        padding: 2rem;
+        overflow: hidden;
+        &__predmet{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 0.5rem;
+        }
+        &__stars{
+            display: flex;
+            gap: 0.5rem;
+            img{
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+        }
+        button{
+            margin-top: 1.5rem;
+        }
+
+    }
+    &-bg{
+        position: absolute;
+        width: 93px;
+        height: 82px;
+        right: 0;
+        top: -15.66px;
+    }
+}
+
+.profile .wrapper{
+    position: relative;
+    .bg-profile-1{
+        position: absolute;
+        top: 0;
+        width: 12rem;
+        height: 6.6rem;
+        right: 0;
+    }
+    .bg-profile-2{
+        position: absolute;
+        top: 12vh;
+        left: 1vw;
+        width: 7rem;
+        height: 8rem;
+    }
+    .bg-profile-3{
+        width: 6.2rem;
+        height: 7.2rem;
+        position: absolute;
+        top: 17vh;
+        right: 50%;
+    }
+}
+
+@media (max-width: 1175px){
+    .progress-card{
+        width: 100%;
+    }
+    .profile-function{
+        flex-direction: column;
+        button{width: 100%;}
+    }
+    .profile-images__elips{
+        bottom: 20%;
+    }
+}
+@media (max-width: 769px){
+    .profile-main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-images, .profile-information{
+        width: 100%;
+    }
+    .profile-images__elips {
+        bottom: 27%;
+    }
+    .bg-profile-3{
+        display: none;
+    }
+    .slider-thumb .next-arrow{
+        right: -4rem;
+    }
+    .slider-thumb .prev-arrow{
+        left: -5rem;
+    }
+}

@@ -556,6 +556,36 @@ button {
     gap: 4rem;
   }
 }
+.progress-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 1.5rem;
+  gap: 1.5rem;
+  margin-top: 2.2rem;
+}
+.progress-box .progressbar {
+  width: 90%;
+  background: #EEEEEE;
+  border-radius: 10000px;
+  height: 0.4rem;
+  padding: 0;
+}
+.progress-box .progressbar > div {
+  width: 40%;
+  background: #FF8832;
+  background: var(--orange);
+  height: 0.4rem;
+  border-radius: 10px;
+}
+.progress-box .progress-procent {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
 .main-section {
   background: url(../../build/img/bg-gradient.png);
   background-repeat: no-repeat;

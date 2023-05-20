@@ -321,3 +321,28 @@ button {
         }
     }
 }
+.progress-box{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 2.2rem;
+    .progressbar {
+        width: 90%;
+        background: #EEEEEE;
+        border-radius: 10000px;
+        height: 0.4rem;
+        padding: 0;
+      }
+      
+    .progressbar>div {
+        width: 40%;
+        background: var(--orange);
+        height: 0.4rem;
+        border-radius: 10px;
+    }
+    .progress-procent{
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+}
